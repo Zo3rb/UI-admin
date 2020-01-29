@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- HTML Basic Meta Tags  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Page describtive Text To Describe The Web Page Will Goes Here">
+  <title>Admin Dashboard(Bootstrap v4 Training 3)</title>
+  <!-- Normalize CSS Style Document -->
+  <link href="css/Normalize.css" />
+  <!-- Bootstrap min -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootsrap To Modifi if needed -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Animate CSS -->
+  <link href="css/animate.css" rel="stylesheet">
+  <!-- jQuery Navbar-nice Scroll Plugin CSS File  -->
+  <link href="css/navbar-fixed.css" rel="stylesheet">
+  <!-- My Main CSS Style Document -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Script document To work on a Old browser -->
+  <!--[if lt IE 9]>
+     <script type="text/javascript" src="js/html5shiv.min.js"></script>
+     <script type="text/javascript" src="js/respond.min.js"></script>
+     <![endif]-->
+</head>
+
+<body>
+
+  <!-- Starting The Navbar Here -->
+
+  <div class="navbar navbar-toggleable-sm p-0 navbar-inverse bg-inverse">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Blogen</a>
+      <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="navbar-item active">
+            <a href="index.html" class="nav-link">Dashboard</a>
+          </li>
+          <li class="navbar-item">
+            <a href="posts.html" class="nav-link">Posts</a>
+          </li>
+          <li class="navbar-item">
+            <a href="categories.html" class="nav-link">Categories</a>
+          </li>
+          <li class="navbar-item">
+            <a href="users.html" class="nav-link">Users</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-user"></i> W.Back admin</a>
+            <div class="dropdown-menu">
+              <a href="profile.html" class="dropdown-item">
+                <i class="fa fa-user-circle"></i> Profile</a>
+              <a href="settings.html" class="dropdown-item">
+                <i class="fa fa-gear"></i> Settings</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <i class="fa fa-user-times"></i> Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ending The Navbar Here -->
+
+
+  <!-- Starting the Header here -->
+
+  <header class="header text-white bg-primary py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>
+            <i class="fa fa-gear"></i> Dashboard</h1>
+        </div>
+      </div>
+  </header>
+
+  <!-- Ending the Header here -->
+
+  <!-- Starting the Panel Section Here  -->
+
+  <section class="panels py-3 bg-faded text-white mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="#" class="btn btn-block btn-primary text-center" data-toggle="modal" data-target="#addNewPost">
+            <i class="fa fa-plus"></i> Add New Post
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#" class="btn btn-block btn-success text-center" data-toggle="modal" data-target="#addNewCategory">
+            <i class="fa fa-plus"></i> Add New Category
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#" class="btn btn-block btn-warning text-center" data-toggle="modal" data-target="#addNewUser">
+            <i class="fa fa-plus"></i> Add New User
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ending the Panel Section Here  -->
+
+  <!-- Starting The Posts Section Here  -->
+
+  <section class="posts">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Latest Posts</h3>
+            </div>
+            <table class="table table-striped">
+              <thead class="thead-inverse">
+                <tr>
+                  <td>#</td>
+                  <td>Title</td>
+                  <td>Category</td>
+                  <td>Data-posted</td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Post One</td>
+                  <td>Web Developement</td>
+                  <td>November 27, 2017</td>
+                  <td>
+                    <a class="btn btn-secondary" href="details.html">
+                      <i class="fa fa-angle-double-right"></i> Details</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Post Two</td>
+                  <td>Web Design</td>
+                  <td>November 25, 2017</td>
+                  <td>
+                    <a class="btn btn-secondary" href="details.html">
+                      <i class="fa fa-angle-double-right"></i> Details</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Post Three</td>
+                  <td>SEO</td>
+                  <td>November 25, 2017</td>
+                  <td>
+                    <a class="btn btn-secondary" href="details.html">
+                      <i class="fa fa-angle-double-right"></i> Details</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Post Four</td>
+                  <td>SEO</td>
+                  <td>November 24, 2017</td>
+                  <td>
+                    <a class="btn btn-secondary" href="details.html">
+                      <i class="fa fa-angle-double-right"></i> Details</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Post Five</td>
+                  <td>Web Design</td>
+                  <td>November 26, 2017</td>
+                  <td>
+                    <a class="btn btn-secondary" href="details.html">
+                      <i class="fa fa-angle-double-right"></i> Details</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Post Six</td>
+                  <td>Networks</td>
+                  <td>November 24, 2017</td>
+                  <td>
+                    <a class="btn btn-secondary" href="details.html">
+                      <i class="fa fa-angle-double-right"></i> Details</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-3 text-white text-center">
+          <div class="card card-primary p-4 mb-3">
+            <h4>Posts</h4>
+            <h2 class="display-4">
+              <i class="fa fa-pencil"></i> 6</h2>
+            <a href="posts.html" class="btn btn-outline-secondary w-25 btn-sm mt-2 offset-4 text-white">Veiw</a>
+          </div>
+          <div class="card card-success p-4 mb-3">
+            <h4>Categories</h4>
+            <h2 class="display-4">
+              <i class="fa fa-folder-open-o"></i> 4</h2>
+            <a href="posts.html" class="btn btn-outline-secondary w-25 btn-sm mt-2 offset-4 text-white">Veiw</a>
+          </div>
+          <div class="card card-warning p-4 mb-3">
+            <h4>Users</h4>
+            <h2 class="display-4">
+              <i class="fa fa-users"></i> 8</h2>
+            <a href="posts.html" class="btn btn-outline-secondary w-25 btn-sm mt-2 offset-4 text-white">Veiw</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ending The Posts Section Here  -->
+
+
+  <!-- Starting The Footer Section Here -->
+
+  <footer class="footer text-white text-center bg-inverse py-5">
+    <div class="container">
+      <h5>Copyrights &copy; 2017 Bolgen</h5>
+    </div>
+  </footer>
+
+  <!-- Ending The Footer Section Here -->
+
+
+
+
+
+  <!-- The Modal Contents Here -->
+
+  <!-- The Post Modal -->
+
+  <div class="modal" id="addNewPost">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title mb-0" id="addNewPostLabel">New Post</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="title">Post's Title</label>
+              <input type="text" class="form-control" id="title" />
+            </div>
+            <div class="form-group">
+              <label for="category">Category</label>
+              <select class="form-control" id="category">
+                <option value="">Web Design</option>
+                <option value="">Web Developement</option>
+                <option value="">SEO</option>
+                <option value="">Networks</option>
+              </select>
+            </div>
+            <div class="form-group bg-faded">
+              <label for="image">Image</label>
+              <input type="file" class="form-control-file">
+              <small class="formhelp text-muted">Max Size 3MB</small>
+            </div>
+            <div class="form-control">
+              <label for="body">Body</label>
+              <textarea class="form-control" name="editor1" id="body">This is some sample content.</textarea>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-primary" data-dismiss="modal">Add Post</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Post Modal -->
+
+  <!-- The Category Modal -->
+
+  <div class="modal" id="addNewCategory">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title mb-0" id="addNewCategoryLabel">New Category</h5>
+          <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="categoryTitle">Category's Title</label>
+              <input type="text" class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-success" data-dismiss="modal">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Category Modal -->
+
+  <!-- The User Modal -->
+
+  <div class="modal" id="addNewUser">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-warning text-white">
+          <h5 class="mb-0 modal-title" id="addNewUserLabel">Add New User</h5>
+          <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username">Name</label>
+              <input type="text" id="username" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="password2">Confirm Password</label>
+              <input type="password" id="password2" class="form-control" />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-warning" data-dismiss="modal">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The User Modal -->
+
+
+  <!-- The Modal Contents Here -->
+
+
+  <!-- Script Files -->
+
+  <!-- Script Tage For CK Editor -->
+  <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace('editor1');
+  </script>
+
+
+  <!-- My Main JS Document -->
+  <script src="js/main.js"></script>
+  <!-- jQuery JS Document -->
+  <script src="js/jQuery-3.2.1.js"></script>
+  <!-- Tether JS Document -->
+  <script src="js/tether.min.js"></script>
+  <!-- Bootstrap JS Document -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- jQuery Navbar Nice Scroll Plugin -->
+  <script src="js/navbar-fixed.js"></script>
+</body>
+
+</html>

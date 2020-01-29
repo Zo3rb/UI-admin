@@ -1,0 +1,26 @@
+
+
+/* Start Styling The Navbar Here  */
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 0 0 50px !important;
+    }
+}
+
+/* End Styling The Navbar Here  */
+
+.thead-inverse {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem
+}
+
+@media (max-width: 922px) {
+    .user-img {
+        width: 50%;
+        display: block !important;
+        margin: auto !important;
+    }
+}
